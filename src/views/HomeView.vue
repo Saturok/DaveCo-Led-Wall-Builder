@@ -1,12 +1,9 @@
 <script setup>
 // --- LOGIC SECTION ---
 import { reactive, computed, ref, nextTick } from 'vue';
-import { collection, addDoc } from 'firebase/firestore';
-import { db } from '../firebase';
 import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
 
-const isSaving = ref(false);
 const viewMode = ref('power'); 
 const flowDirection = ref('vertical'); 
 
